@@ -1,0 +1,129 @@
+#page {
+    display: grid;
+    grid-template-rows: 70px 825px 70px;
+    
+}
+
+
+#navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    float: right;
+    
+}
+
+.list-item a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+}
+.list-item a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 50px 50px 410px;
+    grid-template-areas: 
+    ". google-logo ."
+    ". search-bar ."
+    ". buttons ."
+    ". text .";
+    
+}
+
+#google-logo {
+    grid-area: google-logo;
+    display: block;
+    margin: auto auto 30px;
+
+}
+#search-bar {
+    grid-area: search-bar;
+    display: flex;
+    margin: 0 auto;
+    outline: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: none;
+    height: 44px;
+    width: 482px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    font: arial-sans-serif;
+    font-size: 16px;
+}
+
+#search-bar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#buttons {
+    grid-area: buttons;
+    display: block;
+    margin: auto;
+    appearance: none;
+}
+#text {
+    grid-area: text;
+    display: block;
+    margin: 20px auto;
+    font: arial-sans-serif;
+    font-size: 14px;
+}
+
+#footer {
+    
+}
+
+#footer {
+    display: grid;
+    margin-left: 25px;
+    grid-template-columns: 100px 100px 70px 200px 1fr 100px 80px 100px;
+    grid-template-rows: 35px 35px;
+    grid-template-areas: 
+    "brasil . . . . . . ."
+    "publicidade negocios sobre como-funciona-a-pesquisa . privacidade termos config";
+}
+#footer a {
+    text-align: justify;
+    font: arial-sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+#brasil {
+    grid-area: brasil;
+}
+#publicidade {
+    grid-area: publicidade;
+}
+#negocios {
+    grid-area: negocios;
+}
+#sobre {
+    grid-area: sobre;
+}
+#como-funciona-a-pesquisa {
+    grid-area: como-funciona-a-pesquisa;
+}
+#privacidade {
+    grid-area: privacidade;
+}
+#termos {
+    grid-area: termos;
+}
+#config {
+    grid-area: config;
+}
